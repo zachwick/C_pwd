@@ -1,0 +1,61 @@
+pwd - prints (p)resent (w)orking (d)irectory
+
+Part of edutils
+
+Copyright 2015 zach wick <zach@zachwick.com>
+Licensed under the GNU GPLv3 or later
+
+1. Build Requirements:
+----------------------
+REQUIRED:
+- gcc
+- GNU make
+
+OPTIONAL
+- docco
+- valgrind
+
+2. Building and Installing:
+---------------------------
+- Clone the pwd repo
+
+  git clone git@github.com:/zachwick/pwd.git pwd
+
+- cd into the pwd/src directory
+
+  cd pwd/src
+
+- compile pwd using GNU make
+
+  make
+
+- (OPTIONAL) make the annotated source documentation
+
+  make docs
+
+- (OPTIONAL) run valgrind against the pwd binary
+
+  make test
+
+- (OPTIONAL) install the pwd binary
+  NB: default install location requires root permission
+
+  make install
+
+- (OPTIONAL) replace GNU 'pwd' with edutils 'pwd'
+  NB: requires root permission
+
+  make replace_gnu
+
+3. Contributing:
+----------------
+pwd is intended to be an educational project. Therefore, code clarity will always
+take precedence over execution speed, binary size, and programming style.
+
+In that vein, instead of contributing to pwd, you should use pwd as inspiration
+and implement your own pwd-like utility.
+
+If you really want to contribute to pwd, I am not going to stop you however. After
+making sure that your changes conform to the pwd vision (code clarity above all)
+submit a pull request via Github.
+
