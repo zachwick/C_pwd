@@ -18,7 +18,7 @@ main(int argc, char *argv[]) {
 	char *dirname = getcwd(NULL, 0);
 
 	// Print out the directory's name
-	printf("%s\n", dirname);
+	puts(dirname);
 
 	// Clean up the memory allocated from calling getcwd
 	free(dirname);
